@@ -6,15 +6,15 @@
 
 
 
-### Prerequisites
+### Python
 
-Recent versions of TensorFlow, numpy, scipy and networkx are required.
+Recently I started to learn python programming from tutorials from [MorvanZhou](https://morvanzhou.github.io/tutorials/), my notes and exercise raw python code please see [here](https://github.com/qianfeng2/PNcode/tree/master/code/constructBioNetwork).
 
 ### Datasets
 
 
 
-## Basic examples
+
 
 
 
