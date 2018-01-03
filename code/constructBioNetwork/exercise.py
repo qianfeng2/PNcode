@@ -43,7 +43,7 @@ print(dictionary)
 
 
 #############################################################################
-x=1;y=2;z=1注意if else 和if elif else语句的else后面也要有冒号：if和else是同一列
+x=1;y=2;z=1###注意if else 和if elif else语句的else后面也要有冒号：if和else是同一列
 if x <y:
 	print("x is less than y")
 else:
