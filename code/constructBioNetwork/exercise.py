@@ -15,7 +15,6 @@ while i <10:
 
 
 
-
 #############################################################################
 example_list=[1,2,"emma"]    # for loop
 for i in example_list:
@@ -39,8 +38,6 @@ print(dictionary)
 dictionary["orange"]=20
 print(dictionary)
 #############################################################################
-
-
 
 
 
@@ -79,8 +76,6 @@ for i in range(-5,5):####for loop 可以套if else语句，但是一定要小心
 
 
 
-
-
 #############################################################################
 def functiontest(a,b):
 	print("This is a function")
@@ -94,7 +89,12 @@ def fun():
     print(x)
     return(a+100)
 print(fun())
+
+func=lambda x,y:x*y**2##easy to write a function
+func(3,2)###result is 12.
 #############################################################################
+
+
 
 
 #############################################################################
@@ -158,6 +158,7 @@ print(localtime())
 
 
 
+
 #############################################################################
 ###continue and break 
 a=True
@@ -183,4 +184,64 @@ while True:
     else:
         print("1 is not satisfied")
         break
+#############################################################################
+
+
+
+
+#############################################################################
+class Calculator:
+    name="Good"
+    price=18
+    def plus(self,x,y):
+        print(self.price)
+        result=x+y
+        return(result)
+    def minus(self,x,y):
+        print(self.name)
+        result=x-y
+        return(result)
+cal=Calculator()
+cal.name
+cal.minus(10,3)
+#############################################################################
+
+
+
+
+#############################################################################
+a=[1,3,5];b=[2,4,6];
+list(zip(a,b))  ########result is [1,2],[3,4],[5,6], zip more than two lists are also available.
+for i,j in zip(a,b):
+    print(i*0.5,j*2)#######pay attention to the divide outcome is different in different python versions!!!
+
+a_list_multi=[[1,2,3],[4,5,6]]
+print(a_list_multi[0][0]) ###lead to 1  
+
+a_tuple=2,4,6,8
+for i in range(len(a_tuple)):
+    print('i=',i,'number is:',a_tuple[i])###a_tuple[1]=3 lead to an error.
+
+ddictionary={"apple":[1,2,3],"pear":2,"banana":[1,2,3,4]}
+print(dictionary["apple"])
+del dictionary["pear"]
+print(dictionary)
+dictionary["orange"]=20
+print(dictionary)
+#############################################################################
+
+
+
+
+#############################################################################
+char_list=['a','a','c','e'];
+char=set(char_list)
+char2={'c','e','f'}
+print(char.difference(char2))
+print(char.intersection(char2))
+
+char.add('f')
+print(char)
+char.remove('f')
+print(char)
 #############################################################################
