@@ -1,3 +1,5 @@
+###Available tutorial please visit: http://www.runoob.com/python/python-tutorial.html
+
 print(1)
 
 #############################################################################
@@ -222,7 +224,7 @@ a_tuple=2,4,6,8
 for i in range(len(a_tuple)):
     print('i=',i,'number is:',a_tuple[i])###a_tuple[1]=3 lead to an error.
 
-ddictionary={"apple":[1,2,3],"pear":2,"banana":[1,2,3,4]}
+dictionary={"apple":[1,2,3],"pear":2,"banana":[1,2,3,4]}###d = {key1 : value1, key2 : value2 }
 print(dictionary["apple"])
 del dictionary["pear"]
 print(dictionary)
@@ -244,4 +246,22 @@ char.add('f')
 print(char)
 char.remove('f')
 print(char)
+#############################################################################
+
+
+
+
+#############################################################################
+tup = ('Google', 'Runoob', 1997, 2000)
+tup[0:2]####output is 'Google', 'Runoob'
+
+a_list_multi=[[1,2,3],[4,5,6]]
+tup = ('Google', a_list_multi, 1997, 2000)
+print(tup[1])
+print(tup[0:2])##output is ('Google', [[1, 2, 3], [4, 5, 6]])
+
+tup = ('Google', a_list_multi, 1997, dictionary)
+tup[-1]###{'apple': [1, 2, 3], 'banana': [1, 2, 3, 4], 'pear': 2}
+tup[-1]["apple"]####output is [1,2,3]
+#elements in tuple or list could be a combination of different data types:string, list, multi-list, and even dicionary.
 #############################################################################
